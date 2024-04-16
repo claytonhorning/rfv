@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commentors",
+  "info": {
+    "singularName": "commentor",
+    "pluralName": "commentors",
+    "displayName": "Commentor"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "facebookId": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "freelancers",
+  "info": {
+    "singularName": "freelancer",
+    "pluralName": "freelancers",
+    "displayName": "Freelancer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "joined": {
+      "type": "date"
+    },
+    "profile": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "facebookId": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    }
+  }
+}

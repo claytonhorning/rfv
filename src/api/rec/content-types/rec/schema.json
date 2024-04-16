@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recs",
+  "info": {
+    "singularName": "rec",
+    "pluralName": "recs",
+    "displayName": "Rec",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "commentor": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::commentor.commentor"
+    },
+    "recommends": {
+      "type": "boolean"
+    },
+    "date": {
+      "type": "date"
+    },
+    "description": {
+      "type": "text"
+    },
+    "business": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::business.business"
+    },
+    "freelancer": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::freelancer.freelancer"
+    }
+  }
+}
